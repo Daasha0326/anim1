@@ -1,0 +1,82 @@
+.content
+{
+    background-color:black;
+    padding: 10% 10% 10% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content >div:nth-child(1)
+{
+    width: 30vh;
+    height: 30vh;
+    background-color: red;
+    position: relative;
+    border: solid 3px white;
+    transition-property: border;
+    transition-delay: 2s;
+}
+.content >div:nth-child(1):hover{
+    border-left: none;
+    border-right: none;
+}
+.content >div:nth-child(1) >div:nth-child(1)
+{
+    width: 30vh;
+    height: 30vh;
+    background-color: red;
+    position: absolute;
+    border: solid 3px white;
+    transform: rotate(45deg);
+    transition-property: border;
+    transition-delay: 3s;
+    
+}
+.content >div:nth-child(1) >div:nth-child(1):hover
+{
+    border-top: none;
+    border-bottom: none;
+}
+.content >div:nth-child(1) >div:nth-child(1) >div:nth-child(1)
+{
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.content >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1)
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.content >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2)
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+.content >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3)
+
+{
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.content >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4)
+
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
